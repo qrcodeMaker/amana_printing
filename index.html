@@ -1,34 +1,224 @@
-<!DOCTYPE html>
-<html lang="en" style="height: 100%;">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amana Printing </title>
-      <link rel="icon" type="image/x-icon" href="./images/logo amana png.png">
-    <!-- font awsome -->
-    <script src="https://kit.fontawesome.com/e6719e2cd9.js" crossorigin="anonymous"></script>
-     <!-- bootstrap style -->
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css">
-</head>
-<body style="height: 100%;" >
-   <div class="container-fluid p-0 " style="height: 100%;" >
-    <div class="col-lg-5 pt-3 m-auto col-md-7 col-12 col-sm-8 text-center " style="background: #e01616; background: linear-gradient(90deg,rgba(224, 22, 22, 0.72) 0%, rgba(189, 142, 142, 0.88) 50%, rgba(36, 26, 26, 0.75) 100%); height: 100%;"  >
-          <img  alt="amana logo" src="./images/logo amana png.png"  width="35%"  >
-        <!-- <h1 class=" text-success"> Amana Printing </h1> -->
-        <div class="py-1 mt-2 mb-5" style=" background-color: #de2020;  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
-">
-            <a  target="_blank" href="https://www.facebook.com/Amanaprin"> <i class="fab fa-facebook fs-2 mx-3 text-white"></i> </a>
-            <a  target="_blank" href="https://www.instagram.com/amana_printing_3"> <i class="fab fa-instagram  fs-2 mx-3 text-white "></i></a>
-            <!-- <a  target="_blank" href="www.tiktok.com/@amana_branding_de?_t=ZS-8vftnA2dq3W&_r=1"> <i class="fab fa-tiktok fs-2 mx-3 text-white"></i></a> -->
-            <a  target="_blank" href="tel:19292906165"><i class="fas fa-phone fs-2 mx-3 text-white"></i></a>
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=19292906165&text=Hello%2C%20I%20am%20interested%20in%20your%20printing%20services.%20Could%20you%20please%20provide%20me%20with%20more%20information%3F"><i class="fab fa-whatsapp fs-2 mx-3 text-white "></i></a>
-        </div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96889.69642364196!2d-74.020501!3d40.634226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c245504d0b9e4b%3A0xc6330e345c23c7f8!2s507%2068th%20St%2C%20Brooklyn%2C%20NY%2011220!5e0!3m2!1sen!2sus!4v1761776960179!5m2!1sen!2sus" width="80%" height="250" style="border:#de2020 4px double; "allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        <h2 class="text-dark my-3"><img width="50px" src="./images/Rainbow-Click-Sticker-by-Cinekid.gif" alt="">  زور موقعنا من خلال الرابط اسفل </h2>
-        <a href="https://amanaprinting.com" class="fs-3" style="text-decoration: none; color: rgb(255, 255, 255);" >amanaprinting.com</a>
- </div>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Amana Printing</title>
+<meta name="description" content="Amana Printing — Quick links to contact, social, and location." />
 
-   </div> 
+<style>
+  :root{
+    --bg:#0b0b0d;        /* near black */
+    --card:#111114;
+    --text:#ffffff;
+    --muted:#cfcfd6;
+    --red:#de2020;       /* brand red (from your map border) */
+    --red2:#ff3b3b;      /* highlight */
+    --stroke: rgba(222,32,32,.35);
+    --shadow: 0 22px 60px rgba(0,0,0,.65);
+    --radius: 20px;
+  }
+
+  *{ box-sizing:border-box; }
+  body{
+    margin:0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", sans-serif;
+    color: var(--text);
+    background:
+      radial-gradient(900px 520px at 50% -10%, rgba(222,32,32,.22), transparent 60%),
+      radial-gradient(700px 420px at 10% 20%, rgba(255,59,59,.12), transparent 55%),
+      linear-gradient(160deg, #0f0f12, var(--bg));
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:32px 16px;
+  }
+
+  .wrap{ width:min(560px, 100%); }
+
+  .card{
+    background: linear-gradient(180deg, rgba(17,17,20,.92), rgba(10,10,12,.92));
+    border: 1px solid var(--stroke);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    overflow:hidden;
+    position:relative;
+  }
+
+  .topGlow{
+    position:absolute; inset:-220px -140px auto -140px;
+    height:280px;
+    background: radial-gradient(circle at 50% 50%, rgba(222,32,32,.28), transparent 70%);
+    pointer-events:none;
+  }
+
+  header{
+    padding:28px 22px 14px;
+    text-align:center;
+  }
+
+  .logo{
+    width:120px;
+    height:120px;
+    border-radius:999px;
+    margin:0 auto;
+    border: 2px solid rgba(222,32,32,.55);
+    box-shadow: 0 12px 34px rgba(0,0,0,.55);
+    overflow:hidden;
+    background:#0b0b0d;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .logo img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+  }
+
+  h1{
+    margin:14px 0 6px;
+    font-size:22px;
+    letter-spacing:.3px;
+    font-weight:800;
+  }
+  .sub{
+    margin:0;
+    color: var(--muted);
+    font-size:14px;
+    line-height:1.5;
+  }
+
+  .content{ padding: 14px 18px 22px; }
+
+  .btn{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    text-decoration:none;
+    padding:14px 14px;
+    border-radius: 14px;
+    font-weight:800;
+    letter-spacing:.2px;
+    transition: transform .12s ease, filter .12s ease, box-shadow .12s ease;
+    user-select:none;
+    margin: 12px 0;
+    border:1px solid rgba(222,32,32,.35);
+    box-shadow: 0 12px 30px rgba(0,0,0,.35);
+    background: rgba(255,255,255,.04);
+    color: var(--text);
+  }
+  .btn:hover{
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+    box-shadow: 0 14px 38px rgba(0,0,0,.45);
+  }
+
+  .btn.primary{
+    background: linear-gradient(135deg, var(--red2), var(--red));
+    color:#ffffff;
+    border:1px solid rgba(0,0,0,.25);
+  }
+
+  .section{
+    margin-top: 18px;
+    padding: 16px 14px;
+    border-radius: 16px;
+    border:1px solid rgba(222,32,32,.22);
+    background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(0,0,0,.0));
+  }
+
+  .sectionTitle{
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.85);
+    margin: 0 0 10px;
+  }
+
+  .mapWrap{
+    margin-top:14px;
+    border-radius:16px;
+    overflow:hidden;
+    border: 4px double var(--red);
+    background:#000;
+  }
+
+  footer{
+    text-align:center;
+    padding: 14px 18px 18px;
+    color: rgba(207,207,214,.9);
+    font-size: 12px;
+  }
+
+  @media (max-width:460px){
+    header{ padding:26px 18px 12px; }
+    .content{ padding: 12px 14px 18px; }
+  }
+</style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card" aria-label="Amana Printing links">
+      <div class="topGlow"></div>
+
+      <header>
+        <div class="logo" aria-label="Logo">
+          <!-- Put your logo file next to index.html and name it: logo.png -->
+          <img src="images/logo.png" alt="Amana Printing logo" />
+        </div>
+
+        <h1>Amana Printing</h1>
+        <p class="sub">Design & Printing Services</p>
+      </header>
+
+      <div class="content">
+        <!-- Primary CTA -->
+        <a class="btn primary"
+           href="https://api.whatsapp.com/send?phone=19292906165&text=Hello%2C%20I%20am%20interested%20in%20your%20printing%20services.%20Could%20you%20please%20provide%20me%20with%20more%20information%3F"
+           target="_blank" rel="noopener">
+          💬 WhatsApp
+        </a>
+
+        <a class="btn" href="tel:19292906165">
+          📞 Call Us
+        </a>
+
+        <a class="btn" href="https://www.instagram.com/amana_printing_3" target="_blank" rel="noopener">
+          📸 Instagram
+        </a>
+
+        <a class="btn" href="https://www.facebook.com/Amanaprin" target="_blank" rel="noopener">
+          📘 Facebook
+        </a>
+
+        <!-- Location -->
+        <div class="section">
+          <p class="sectionTitle">Location</p>
+          <div class="mapWrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96889.69642364196!2d-74.020501!3d40.634226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c245504d0b9e4b%3A0xc6330e345c23c7f8!2s507%2068th%20St%2C%20Brooklyn%2C%20NY%2011220!5e0!3m2!1sen!2sus!4v1761776960179!5m2!1sen!2sus"
+              width="100%" height="250"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        © <span id="y"></span> Amana Printing · All rights reserved
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
-<!-- bootstrap scripts -->
-<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 </html>
